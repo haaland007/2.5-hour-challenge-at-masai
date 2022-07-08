@@ -11,6 +11,22 @@
         grid-template-columns: repeat(3,1fr);
         gap :20px;
       }
+
+      #navbar,#search_bar{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        /* border: solid 1px; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 30%;
+        margin: auto;
+        margin-top: 30px;
+      }
+      input{
+        padding: 20px;
+      }
     </style>
   </head>
   <body>
@@ -20,7 +36,7 @@
       <!-- Display the wallet amount here inside h1 tag with id as "wallet". Note only amount, no extra text. Like 500 not Rs 500 -->
     </div>
     <div id="search_bar">
-      <input type="text" id="search" oninput="debounce(main,3000)">
+      <input type="text" id="search" oninput="debounce(main,3000)" placeholder="enter movie name">
       <!-- input box for searching movies with id as "search" -->
       <!-- No button should be there for searching movies, it should search with input  -->
     </div>
