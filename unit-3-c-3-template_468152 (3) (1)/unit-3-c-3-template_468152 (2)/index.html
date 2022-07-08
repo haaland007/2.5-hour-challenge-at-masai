@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Amount</title>
+
+    <style>
+      #navbar,#add-money{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        /* border: solid 1px; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 30%;
+        margin: auto;
+        margin-top: 30px;
+      }
+      input{
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
     <div id="navbar">
@@ -13,9 +31,9 @@
     </div>
     <div id="add-money">
       
-      <input type="number" placeholder="amount" id="amount">
-      <button id="add_to_wallet">add_to_wallet</button>
-      <button id="book_movies"> <a href="./movies.html">book_movies</a> </button>
+      <input type="number" placeholder="amount" id="amount"> <br>
+      <button id="add_to_wallet">add_to_wallet</button><br>
+      <button id="book_movies"> <a href="./movies.html">book_movies</a> </button> <br>
       <!-- input box for accepting money with id as "amount" -->
       <!-- button with id as "add_to_wallet" -->
       <!-- button with id as "book_movies" to go to movies.html -->
